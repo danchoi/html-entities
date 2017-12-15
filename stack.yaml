@@ -1,0 +1,21 @@
+resolver: nightly-2017-04-05
+packages:
+- '.'
+- location:
+    git: https://github.com/mackeyrms/haskelldb
+    commit: cbc29a
+  extra-dep: true
+extra-deps: 
+# - HDBC-mysql-0.7.1.0
+## - tsv2csv-0.1.0.2
+# - HDBC-2.4.0.1   -- not needed for lts >= 7
+# - haskelldb-2.2.4  - errors lts7/ghc8.0.1,  Could not deduce (Size a)
+# - tsv2csv-0.1.0.1 -- added to stackage around lts 8
+#- HDBC-mysql-0.6.6.2 -- incompatible config fun type lts >= 7
+#- HDBC-mysql-0.7.1.0 -- not needed with nightly >= 4/5/17
+# - xlsx-0.4.1  minor compilation errors left
+- hxt-tagsoup-9.1.4
+- html-entities-1.1.4.1
+
+
+#- yaml-0.8.22 not needed for lts8
